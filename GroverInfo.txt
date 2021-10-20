@@ -1,0 +1,49 @@
+General information
+
+1996 Grover's algorithm - Lov Grover
+Speed is quadratic
+Grover's algorithm is able to search through a data set and pick out the correct value in a faster time than a classical computer
+--------------------------------------------------------------------------------------------------------------------------
+Physics
+Bit -> qubit. 1, 0, or a combination of the two
+Use a visual representation of a vector in a unit sphere.
+--------------------------------------------------------------------------------------------------------------------------
+
+Computation section
+Hadamard gate puts the qubit into a superposition of 0 and 1.
+Register = circuit of qubits
+BEGINNING OF CIRCUIT - apply hadamard gate to each qubit (called the initialization)
+Superposition of all the possible states. 5 qubits -> 2^5 total configurations
+
+NOW GROVER ITERATION
+
+THE ORACLE/Black Box (Controlled Z gate)
+The oracle knows the correct answer as it goes through the lists
+Phase shift all the correct values, leave other values untouched
+
+AMPLIFICATION (Reflection Operator)
+Apply a phase shift (reflection over s' state), and apply another hadamard transform
+This amplifies the correct state
+Repeat this for (sqrt(N)) times
+Use a geometrical proof of the vectors if time permits
+
+Measure the system
+--------------------------------------------------------------------------------------------------------------------------
+Walkthrough
+
+				    |------------------------------------Oracle Section/Grover iteration------------------|
+Zero Qubits -> H-Gate(Initialize) -> Apply phase shift to correct measurements -> Apply Hadamard Gate to amplify the state-> H-Gate -> measure
+
+--------------------------------------------------------------------------------------------------------------------------
+Applications
+Break encryption systems
+Searching across unstructured data
+brute force search
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Resources
+https://www.youtube.com/watch?v=3WWrQXcktqc - General information on Grover's Algorithm
+https://www.youtube.com/watch?v=0RPFWZj7Jm0 - Qiskit video walkthrough of Grover's Algorithm implementation
+https://www.youtube.com/watch?v=hK6BBluTGhU - Another video explanation
