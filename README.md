@@ -20,3 +20,7 @@ GroverAlg.ipynb is our Grover's Algorithm Jupyter Notebook implementation that d
 ### Presentation
 
 Included is Grover.ppt, a powerpoint presentation used in our video presentation titled Grover.vlc on Grover's Algorithm. This is the culmination of this project on Grover's Algorithm in which we go into more depth on the topic. The script for the video can be found in GroverScript.pdf.
+
+### License
+
+This repository is under the Apache 2.0 open source license.
